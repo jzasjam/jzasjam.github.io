@@ -3972,10 +3972,3 @@ ul.actions.align-center li a {
 .details-panel {
     margin-top: 1em;
 }
-	@media screen and (max-width: 736px) {
-
-		.details-panel {
-			margin-top: 2em;
-		}
-
-	}
