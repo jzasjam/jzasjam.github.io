@@ -170,7 +170,7 @@
 											</div>
 										</div>
 										<div id="pi-led" class="details-panel align-center" style="display: none;">	
-											<hr>
+											
 											<h4>Project Description</h4>
 											<ul class="alt">
 												<li>
@@ -205,7 +205,6 @@
 										
 										<div id="pi-azure" class="details-panel align-center" style="display: none;">	
 											
-											<hr>
 											<h4>Project Description</h4>
 											<ul class="alt">
 												<li>
@@ -349,12 +348,16 @@
 					// Show panel on panel-toggle click with ref to panel from data-panel attribute
 					$('.panel-toggle').click(function() {
 						var panel = $(this).data('panel');
-						$('#' + panel).slideToggle();
-						//$('#' + panel + "-actions").toggle();
-						// Scroll to panel with some space at the top
-						$('html, body').animate({
-							scrollTop: $('#' + panel).offset().top - 100
-						}, 500);
+						$('#' + panel).fadeToggle("slow", function() {
+							
+							// Scroll to panel with some space at the top (if SHOWING the panel)
+							if ($('#' + panel).is(":visible")) {
+								$('html, body').animate({
+									scrollTop: $('#' + panel).offset().top - 100
+								}, 1000);
+							}
+						});
+						
 						return false;
 					});
 

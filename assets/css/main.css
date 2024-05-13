@@ -3968,3 +3968,7 @@ ul.actions.align-center li {
 ul.actions.align-center li a {
 	margin-bottom: 0.5em;
 }
+
+.details-panel {
+    margin-top: 1em;
+}
