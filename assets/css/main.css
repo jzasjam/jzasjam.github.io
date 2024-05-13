@@ -314,6 +314,9 @@ input, select, textarea {
 		hr.major {
 			margin: 3em 0;
 		}
+		hr.minor {
+			margin: 1em 0;
+		}
 
 	.align-left {
 		text-align: left;
@@ -3010,6 +3013,7 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			width: 25em;
+			max-height: 390px;
 		}
 
 			.spotlights > section > .image img {
@@ -3070,6 +3074,31 @@ input, select, textarea {
 		.spotlights > section:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
+
+		.spotlights > section:nth-child(4) {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+
+		.spotlights > section:nth-child(5) {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		.spotlights > section:nth-child(6) {
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+
+		.spotlights > section:nth-child(7) {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+
+		.spotlights > section:nth-child(8) {
+			background-color: rgba(0, 0, 0, 0.35);
+		}
+
+		.spotlights > section:nth-child(9) {
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+
 
 		.spotlights > section.inactive > .image:before,
 		body.is-preload .spotlights > section > .image:before {
@@ -3913,6 +3942,7 @@ input, select, textarea {
 
 
 
+
 .tag {
 	background-color: #FFF;
 	padding: 0.6em 1.2em;
@@ -3922,4 +3952,19 @@ input, select, textarea {
 	display: inline-block;
 	margin-bottom: 0.3em;
     font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+.inner img {
+	max-width: 90%;
+}
+
+
+ul.actions.align-center li {
+    padding: 0;
+    margin: auto;
+}
+
+ul.actions.align-center li a {
+	margin-bottom: 0.5em;
 }

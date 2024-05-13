@@ -66,15 +66,24 @@
 								<section>
 									<span class="icon solid major fa-code"></span>
 									<h3>Development Expertise</h3>
-									<p>I am proficient in various coding languages and formats, including:</p>
+									<p>I am proficient in various coding languages, frameworks and formats, including:</p>
 									<span class="tag">HTML</span>
 									<span class="tag">CSS</span>
 									<span class="tag">JS</span>
 									<span class="tag">PHP</span>
 									<span class="tag">SQL</span>
 									<span class="tag">PYTHON</span>
+									<span class="tag">C#</span>
 									<span class="tag">RSS / XML</span>
 									<span class="tag">JSON</span>
+									<span class="icon solid major fa-code"></span>
+									<hr class="minor">
+									<h3>Frameworks Include</h3>
+									<span class="tag">WordPress</span>
+									<span class="tag">Django</span>
+									<span class="tag">Node.js</span>
+									<span class="tag">Flutter</span>
+									<span class="tag">Apache Cordova</span>
 								</section>
 								<section>
 									<span class="icon solid major fa-link"></span>
@@ -89,11 +98,6 @@
 									<span class="tag">NFC</span>
 									<span class="tag">CLOUD MESSAGING (D2C/C2D)</span>
 									<span class="tag">MQTT</span>
-									<span class="tag">APACHE CORDOVA</span>
-									<span class="tag">FLUTTER</span>
-									<span class="tag">WORDPRESS</span>
-									<span class="tag">DJANGO</span>
-									<span class="tag">NODE.JS</span>
 									<span class="tag">LINUX</span>
 									<span class="tag">RASPBERRY PI</span>
 								</section>
@@ -133,6 +137,7 @@
 
 					<!-- Two -->
 						<section id="two" class="wrapper style1 spotlights">
+
 							<section>
 								<a href="#" class="image"><img src="images/project-milkmonitor.jpg" alt="" data-position="center center" /></a>
 								<div class="content">
@@ -140,20 +145,85 @@
 										<h2>Milk Monitor</h2>
 										<p>IoT Devices, Cloud Services and Mobile Application developed in my final year as a BSc Computing (with Smart Technologies) student at Sheffield Hallam University </p>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn more</a></li>
+											<li><a href="#" class="button">More Soon!</a></li>
 										</ul>
 									</div>
 								</div>
 							</section>
+
 							<section>
 								<a href="#" class="image"><img src="images/project-raspberrypi.jpg" alt="" data-position="center center" /></a>
 								<div class="content">
 									<div class="inner">
 										<h2>Raspberry Pi & SenseHAT Projects</h2>
-										<p>Various projects created using a Raspberry Pi with a SenseHat connected</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn more</a></li>
-										</ul>
+										<p>Various projects created using a Raspberry Pi with SenseHAT to read sensors and control the LED matrix</p>
+										
+										<h3>Pi SenseHAT LED Designer</h3>
+										<div class="row gtr-uniform align-center">
+											<div class="col-6 col-12-xsmall">
+												<img src="images/screenshot-pi-led.png" alt="" width="300" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<ul id="pi-led-actions" class="actions align-center">
+													<li><a href="#" class="button panel-toggle primary icon solid fa-code" data-panel="pi-led">Project Details</a> <a href="https://github.com/jzasjam/pi-led" target="_blank" class="button icon brands fa-github" >View on GitHub</a></li>
+												</ul>
+											</div>
+										</div>
+										<div id="pi-led" class="details-panel align-center" style="display: none;">	
+											<hr>
+											<h4>Project Description</h4>
+											<ul class="alt">
+												<li>
+													Node.js application which allows user to design LED colour configuration and output this live to the SenseHAT as well as providing the LED matrix values.<br>
+													<img src="images/demo-pi-led2.gif" alt="" />
+												</li>
+												<li>
+													Also includes a simple tool to display a scrolling custom message in chosen colours on the SenseHAT LEDs<br>
+													<img src="images/demo-pi-led-message.gif" alt="" />
+												</li>
+											</ul>
+												
+										</div>
+										<hr>
+
+										
+										
+										<h3>Visualise Pi SenseHAT Sensor Data Sent to Azure IoTHub</h3>
+										
+										<div class="row gtr-uniform align-center">
+											<div class="col-6 col-12-xsmall">
+												<img src="images/screenshot-pi-azure.png" alt="" width="300" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<ul id="pi-azure-actions" class="actions align-center">
+													<li><a href="#" class="button panel-toggle primary icon solid fa-code" data-panel="pi-azure">Project Details</a><br><a href="https://github.com/jzasjam/RaspberryPiToAzure" target="_blank" class="button icon brands fa-github" >Part 1 on GitHub</a> <a href="https://github.com/jzasjam/node-iot-hub-data-visualisation" target="_blank" class="button icon brands fa-github" >Part 2 on GitHub</a></li>
+												</ul>
+											</div>
+
+										</div>
+											
+										
+										<div id="pi-azure" class="details-panel align-center" style="display: none;">	
+											
+											<hr>
+											<h4>Project Description</h4>
+											<ul class="alt">
+												<li>
+													Part 1 - Send Data To Azure IoT Hub From the Raspberry Pi based on tutorial: <a href="https://github.com/Azure-Samples/azure-iot-samples-node/tree/master/iot-hub/Tutorials/RaspberryPiApp" target="_blank">https://github.com/Azure-Samples/azure-iot-samples-node/tree/master/iot-hub/Tutorials/RaspberryPiApp</a><br>
+												</li>
+												<li>
+													Part 2 - NodeJS Data Visualisation for Azure IotHub adapted from <a href="https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization" target="_blank">https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization</a> with Google Charts<br>
+													<img src="images/demo-pi-azure-visualisation-temperature.gif" alt="" /><br>
+												</li>
+												<li>
+													The IMU (Innertial Measurement Unit) data from the SenseHAT is also sent to the Azure IoT Hub, visualised in a similar way and rendered in 3D using <a href="https://threejs.org/" target="_blank">Three.js</a><br>
+													<img src="images/demo-pi-azure-visualisation-imu.gif" alt="" />
+												</li>
+											</ul>
+												
+										</div>
+										<hr>
+
 									</div>
 								</div>
 							</section>
@@ -188,7 +258,7 @@
 										<h2>FrontierTechRadio</h2>
 										<p>Developed and maintained a website for a podcast which automatically updates with new episodes, and their details, direct from the podcast RSS feed.</p>
 										<ul class="actions">
-											<li><a href="https://frontiertechrad.io/" target="_blank" class="button primary icon solid fa-globe">Website</a></li>
+											<li><a href="https://frontiertechrad.io" target="_blank" class="button primary icon solid fa-globe">Website</a></li>
 										</ul>
 									</div>
 								</div>
@@ -200,7 +270,7 @@
 										<h2>TheCrowdDataCenter</h2>
 										<p>Developed web services to produce bespoke reports on crowdfunding activity and funding, within a specific geographic region or by sectors and industries, to provide insight into new venture funding opportunities.</p>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn more</a></li>
+											<li><a href="https://thecrowddatacenter.com" target="_blank" class="button primary icon solid fa-globe">Website</a></li>
 										</ul>
 									</div>
 								</div>
@@ -273,6 +343,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" >
+				$(document).ready(function() {
+					
+					// Show panel on panel-toggle click with ref to panel from data-panel attribute
+					$('.panel-toggle').click(function() {
+						var panel = $(this).data('panel');
+						$('#' + panel).slideToggle();
+						//$('#' + panel + "-actions").toggle();
+						// Scroll to panel with some space at the top
+						$('html, body').animate({
+							scrollTop: $('#' + panel).offset().top - 100
+						}, 500);
+						return false;
+					});
 
+				});
+			</script>
 	</body>
 </html>
