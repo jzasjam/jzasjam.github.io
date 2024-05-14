@@ -3972,3 +3972,13 @@ ul.actions.align-center li a {
 .details-panel {
     margin-top: 1em;
 }
+
+
+
+#footer a {
+    color: #FFFFFF40;
+}
+
+	#footer a:hover {
+		color: #FFFFFF90;
+	}
