@@ -35,8 +35,8 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">What I do</a></li>
-							<li><a href="#two">Projects</a></li>
+							<li><a href="#one">About Me</a></li>
+							<li><a href="#two">Experience & Projects</a></li>
 							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
@@ -72,6 +72,27 @@
 						<div class="inner">
 							<h2>What I do</h2>
 							<p>As a highly collaborative and solution-oriented professional, I leverage my strong interpersonal skills and passion for problem-solving to drive innovation and deliver impactful software solutions.</p>
+							
+							<h3>Education</h3>
+							<div class="features">
+								<section class="full">
+									<span class="icon solid major fa-graduation-cap"></span>
+									<h3>BSc Computing (Smart Technologies)</h3>
+									<h4>at Sheffield Hallam University</h4>
+									Graduated with high First Class Honours in 2024
+									<hr>
+									<h4>Modules Included</h4>
+									<span class="tag">Programming</span>
+									<span class="tag">Smart Technologies</span>
+									<span class="tag">Web Application Design and Implementation</span>
+									<span class="tag">Designing Cloud Based Systems</span>
+									<span class="tag">Introduction to AI</span>
+									<span class="tag">Integrated IoT Systems</span>
+								</section>
+							</div>
+							
+
+							<h3>Skills</h3>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
@@ -149,6 +170,19 @@
 						<section id="two" class="wrapper style1 spotlights">
 
 							<section>
+								<a href="#two" class="image"><img src="images/project-fog4health.jpg" alt="" data-position="center center" /></a>
+								<div class="content">
+									<div class="inner">
+										<h2>Fog Nodes in Healthcare</h2>
+										<p>Fog Computing Assisted Anaesthesia Monitoring to Enhance Realtime Surgical Efficiency. Research project with team at Sheffield Hallam University to produce paper for publication at the ISSI IoT 2024 conference
+										<ul class="actions">
+											<li><a href="#two" class="button">Published Soon!</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+							<section>
 								<a href="#two" class="image"><img src="images/project-milkmonitor.jpg" alt="" data-position="center center" /></a>
 								<div class="content">
 									<div class="inner">
@@ -168,6 +202,39 @@
 										<h2>Raspberry Pi & SenseHAT Projects</h2>
 										<p>Applications created using a Raspberry Pi with SenseHAT to read sensors and control the LED matrix</p>
 										
+
+										
+										<h3>Visualise Pi SenseHAT Sensor Data Sent to Azure IoTHub</h3>
+										<div class="row gtr-uniform align-center">
+											<div class="col-6 col-12-xsmall">
+												<img src="images/screenshot-pi-azure.png" alt="" width="300" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<ul id="pi-azure-actions" class="actions align-center">
+													<li><a href="#" class="button panel-toggle primary icon solid fa-code" data-panel="pi-azure">Project Details</a><br><a href="https://github.com/jzasjam/RaspberryPiToAzure" target="_blank" class="button icon brands fa-github" >Part 1 on GitHub</a> <a href="https://github.com/jzasjam/node-iot-hub-data-visualisation" target="_blank" class="button icon brands fa-github" >Part 2 on GitHub</a></li>
+												</ul>
+											</div>
+										</div>
+										<div id="pi-azure" class="details-panel align-center" style="display: none;">	
+											
+											<h4>Project Description</h4>
+											<ul class="alt">
+												<li>
+													<strong>Part 1</strong> - Send Data To Azure IoT Hub From the Raspberry Pi based on tutorial: <a href="https://github.com/Azure-Samples/azure-iot-samples-node/tree/master/iot-hub/Tutorials/RaspberryPiApp" target="_blank">https://github.com/Azure-Samples/azure-iot-samples-node/tree/master/iot-hub/Tutorials/RaspberryPiApp</a><br>
+												</li>
+												<li>
+													<strong>Part 2</strong> - NodeJS Data Visualisation for Azure IotHub adapted from <a href="https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization" target="_blank">https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization</a> with <a href="https://developers.google.com/chart" target="_blank">Google Charts</a><br>
+													<img src="images/demo-pi-azure-visualisation-temperature.gif" alt="" /><br>
+												</li>
+												<li>
+													The IMU (Innertial Measurement Unit) data from the SenseHAT sent to the Azure IoT Hub is visualised in a similar way and rendered in 3D using <a href="https://threejs.org/" target="_blank">Three.js</a><br>
+													<img src="images/demo-pi-azure-visualisation-imu.gif" alt="" />
+												</li>
+											</ul>
+												
+										</div>
+										<hr>
+
 										<h3>Pi SenseHAT LED Designer</h3>
 										<div class="row gtr-uniform align-center">
 											<div class="col-6 col-12-xsmall">
@@ -190,43 +257,6 @@
 												<li>
 													Also includes a simple tool to display a scrolling custom message in chosen colours on the SenseHAT LEDs<br>
 													<img src="images/demo-pi-led-message.gif" alt="" />
-												</li>
-											</ul>
-												
-										</div>
-										<hr>
-
-										
-										
-										<h3>Visualise Pi SenseHAT Sensor Data Sent to Azure IoTHub</h3>
-										
-										<div class="row gtr-uniform align-center">
-											<div class="col-6 col-12-xsmall">
-												<img src="images/screenshot-pi-azure.png" alt="" width="300" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<ul id="pi-azure-actions" class="actions align-center">
-													<li><a href="#" class="button panel-toggle primary icon solid fa-code" data-panel="pi-azure">Project Details</a><br><a href="https://github.com/jzasjam/RaspberryPiToAzure" target="_blank" class="button icon brands fa-github" >Part 1 on GitHub</a> <a href="https://github.com/jzasjam/node-iot-hub-data-visualisation" target="_blank" class="button icon brands fa-github" >Part 2 on GitHub</a></li>
-												</ul>
-											</div>
-
-										</div>
-											
-										
-										<div id="pi-azure" class="details-panel align-center" style="display: none;">	
-											
-											<h4>Project Description</h4>
-											<ul class="alt">
-												<li>
-													<strong>Part 1</strong> - Send Data To Azure IoT Hub From the Raspberry Pi based on tutorial: <a href="https://github.com/Azure-Samples/azure-iot-samples-node/tree/master/iot-hub/Tutorials/RaspberryPiApp" target="_blank">https://github.com/Azure-Samples/azure-iot-samples-node/tree/master/iot-hub/Tutorials/RaspberryPiApp</a><br>
-												</li>
-												<li>
-													<strong>Part 2</strong> - NodeJS Data Visualisation for Azure IotHub adapted from <a href="https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization" target="_blank">https://github.com/Azure-Samples/web-apps-node-iot-hub-data-visualization</a> with <a href="https://developers.google.com/chart" target="_blank">Google Charts</a><br>
-													<img src="images/demo-pi-azure-visualisation-temperature.gif" alt="" /><br>
-												</li>
-												<li>
-													The IMU (Innertial Measurement Unit) data from the SenseHAT sent to the Azure IoT Hub is visualised in a similar way and rendered in 3D using <a href="https://threejs.org/" target="_blank">Three.js</a><br>
-													<img src="images/demo-pi-azure-visualisation-imu.gif" alt="" />
 												</li>
 											</ul>
 												

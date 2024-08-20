@@ -1997,10 +1997,14 @@ input, select, textarea {
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
+			padding: 2em 3em 2em 6em ;
 			width: 50%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
+		}
+
+		.features section.full {
+			width: 100%;
 		}
 
 			.features section:nth-child(-n + 2) {
@@ -2025,8 +2029,8 @@ input, select, textarea {
 				-ms-transform: scale(1);
 				transform: scale(1);
 				position: absolute;
-				left: 3em;
-				top: 3em;
+				left: 2em;
+				top: 2em;
 				opacity: 1;
 			}
 
