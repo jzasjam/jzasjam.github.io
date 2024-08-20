@@ -1,2 +1,2 @@
 # jzasjam.github.io
-Portfolio
+[View My Portfolio](https://jzasjam.github.io/)
