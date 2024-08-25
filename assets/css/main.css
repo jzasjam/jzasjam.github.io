@@ -2690,6 +2690,10 @@ input, select, textarea {
 			vertical-align: middle;
 		}
 
+			ul.actions li.large {
+				font-size: 1.8em;
+			}
+
 		ul.actions.special {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
