@@ -331,6 +331,10 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.note {
+		font-size: 0.8em;
+	}
+
 /* Row */
 
 	.row {
@@ -1902,7 +1906,10 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.4em;
+			font-size: 0.6em;
+			height: 3em;
+			line-height: 3em;
+			letter-spacing: 0;
 		}
 
 		input[type="submit"].large,
@@ -1920,7 +1927,21 @@ input, select, textarea {
 		.button.primary {
 			background-color: #ffffff;
 			color: #312450 !important;
+			-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+			-moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+			box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
 		}
+
+			input[type="submit"].primary:hover,
+			input[type="reset"].primary:hover,
+			input[type="button"].primary:hover,
+			button.primary:hover,
+			.button.primary:hover {
+				-webkit-box-shadow: 0px 5px 3px 1px rgba(0,0,0,0.25);
+				-moz-box-shadow: 0px 5px 3px 1px rgba(0,0,0,0.25);
+				box-shadow: 0px 5px 3px 1px rgba(0,0,0,0.25);
+				transition: all 0.3s ease;
+			}
 
 			input[type="submit"].primary:after,
 			input[type="reset"].primary:after,
@@ -2643,6 +2664,10 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		ul.no-margin {
+			margin: 0;
+		}
+
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
@@ -3022,7 +3047,7 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			width: 25em;
-			max-height: 390px;
+			max-height: 460px;
 		}
 
 			.spotlights > section > .image img {
