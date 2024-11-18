@@ -1350,7 +1350,8 @@ input, select, textarea {
 			}
 
 			.poptrox-popup .caption {
-				display: none !important;
+				/*display: none !important;*/
+				font-size: 0.8em !important;
 			}
 
 			.poptrox-popup .closer,
@@ -1647,7 +1648,7 @@ input, select, textarea {
 			#main .thumb > h2 {
 				pointer-events: none;
 				bottom: 1.875em;
-				font-size: 1.5em;
+				font-size: 1.3em;
 				left: 2.1875em;
 				font-weight: 400;
 				letter-spacing: 0;
