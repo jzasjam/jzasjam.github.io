@@ -2071,16 +2071,3 @@ input, select, textarea {
 	width: 100%;
 }
 
-/* If mobile landscape */
-@media screen and (max-height: 600px) and (orientation: landscape) {
-	
-	.poptrox-popup{
-		min-width: auto !important;
-		min-height: 96% !important;
-	}
-
-	.pic img{
-		width: auto !important;
-		height: 100% !important;
-	}
-}
