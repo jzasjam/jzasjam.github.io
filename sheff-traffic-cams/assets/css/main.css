@@ -2072,7 +2072,7 @@ input, select, textarea {
 }
 
 /* If mobile landscape */
-@media screen and (max-height: 5000px) and (orientation: landscape) {
+@media screen and (max-height: 600px) and (orientation: landscape) {
 	
 	.poptrox-popup{
 		min-width: auto !important;
